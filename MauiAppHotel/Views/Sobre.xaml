@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="MauiAppHotel.Views.Sobre"
+    Title="Sobre"
+    BackgroundColor="{StaticResource PrimaryDark}"
+    NavigationPage.HasNavigationBar="True">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="15" Spacing="15">
+
+            <!-- Título do Aplicativo -->
+            <Label Text="Aplicativo de Reservas de Quartos"
+                   FontSize="24"
+                   TextColor="#800080"
+                   FontFamily="Kalam"
+                   HorizontalOptions="Start"/>
+
+            <!-- Desenvolvedor -->
+            <Label Text="Aplicativo desenvolvido por Keila Cristina da Silva Florindo, em 2025"
+                   FontSize="20"
+                   TextColor="Black"
+                   FontFamily="KalamLight"
+                   HorizontalOptions="Start"/>
+
+            <!-- Propósito -->
+            <Label Text="Propósito do Aplicativo"
+                   FontSize="22"
+                   FontAttributes="Bold"
+                   TextColor="#BA55D3"
+                   FontFamily="Kalam"
+                   HorizontalOptions="Start"
+                   Margin="0,10,0,0"/>
+
+            <Label Text="Este aplicativo foi desenvolvido com o objetivo de facilitar a reserva de quartos de hotel, tornando o processo mais rápido, prático e acessível para todos os usuários."
+                   FontSize="18"
+                   TextColor="Black"
+                   FontFamily="KalamLight"
+                   HorizontalTextAlignment="Start"/>
+
+            <!-- Tecnologias -->
+            <Label Text="Tecnologias Usadas"
+                   FontSize="22"
+                   FontAttributes="Bold"
+                   TextColor="#BA55D3"
+                   FontFamily="Kalam"
+                   HorizontalOptions="Start"
+                   Margin="0,10,0,0"/>
+
+            <Label Text="Desenvolvido em .NET MAUI, utilizando C# e XAML, com foco em oferecer uma experiência moderna e responsiva para dispositivos móveis."
+                   FontSize="18"
+                   TextColor="Black"
+                   FontFamily="KalamLight"
+                   HorizontalTextAlignment="Start"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

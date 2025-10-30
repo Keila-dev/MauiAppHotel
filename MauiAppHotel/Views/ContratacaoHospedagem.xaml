@@ -82,6 +82,9 @@
         <Button Text="Avançar"
                 BackgroundColor="#800080"/>
 
+        <Button Text="Sobre"
+        BackgroundColor="#4B0082"
+        Clicked="btnSobre_Clicked"/>
 
     </VerticalStackLayout>
 </ContentPage>             
