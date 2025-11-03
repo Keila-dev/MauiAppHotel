@@ -54,6 +54,11 @@
                    FontFamily="KalamLight"
                    HorizontalTextAlignment="Start"/>
 
+            <Button Text="Voltar"
+             HorizontalOptions="Center"
+             BackgroundColor="#800080"
+             Clicked="Button_Clicked"/>
+
         </VerticalStackLayout>
     </ScrollView>
 
