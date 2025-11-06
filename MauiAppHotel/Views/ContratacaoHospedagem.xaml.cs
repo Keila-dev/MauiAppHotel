@@ -1,4 +1,5 @@
 using System;
+using System.Threading.Tasks;
 using Microsoft.Maui.Controls;
 
 namespace MauiAppHotel.Views
@@ -28,6 +29,7 @@ namespace MauiAppHotel.Views
             await Navigation.PushAsync(new Sobre());
         }
 
+        //Navega para Hospedagem Contratada
         private void Button_Clicked(object sender, EventArgs e)
         {
             try
@@ -49,5 +51,11 @@ namespace MauiAppHotel.Views
             dtpck_checkout.MinimumDate = data_selecionada_checkin.AddDays(1);
             dtpck_checkout.MaximumDate = data_selecionada_checkin.AddMonths(6);
         }
+
+        private async void Button_Clicked_1(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Galeria());
+        }
+
     }
 }

@@ -13,7 +13,9 @@
                TextColor="#800080"
                HorizontalTextAlignment="Center"/>
 
-        <Frame Margin="10">
+        <Frame Margin="10"
+               BackgroundColor="{StaticResource Gray100}">
+            
             <HorizontalStackLayout>
                 <HorizontalStackLayout>
                     <!--Adultos-->
@@ -30,7 +32,9 @@
             </HorizontalStackLayout>
         </Frame>
 
-        <Frame Margin="10">
+        <Frame Margin="10"
+               BackgroundColor="{StaticResource Gray100}">
+            
             <Grid ColumnDefinitions="* ,* ,* "
                   RowDefinitions="Auto, Auto">
                 <Label Grid.Row="0" Grid.Column="0" Text="Check-in:"/>
@@ -44,7 +48,9 @@
 
         </Frame>
 
-        <Frame Margin="10">
+        <Frame Margin="10"
+               BackgroundColor="{StaticResource Gray100}">
+            
             <HorizontalStackLayout>
                 <Label Text="Valor Total: "/>
                 <Label Text=" R$750,00"/>

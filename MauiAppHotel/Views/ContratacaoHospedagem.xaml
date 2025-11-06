@@ -7,15 +7,28 @@
              NavigationPage.HasNavigationBar="False"  
              BackgroundColor="{StaticResource PrimaryDark}">
 
-    <VerticalStackLayout VerticalOptions="CenterAndExpand"
+    <ScrollView>
+
+        <VerticalStackLayout VerticalOptions="CenterAndExpand"
                          Padding="10">
+
+        <Image Source="hotel.png"
+       HeightRequest="250"
+       HorizontalOptions="Center"
+       Margin="0,20,0,0"/>
+
         <Label 
             Text="Cálculo da Diária"
             FontFamily="Kalam" 
             FontSize="50"
             TextColor="#800080"/>
 
-        <Frame Padding="10">
+        <Frame Padding="10"
+               CornerRadius="15"
+               HasShadow="True"
+               BackgroundColor="{StaticResource Gray100}"
+               Margin="10">
+
             <VerticalStackLayout>
                 <Grid RowDefinitions="Auto, Auto"
                       ColumnDefinitions="*, *, 2*">
@@ -32,6 +45,7 @@
                              x:Name="stp_adultos"
                              Minimum="0"
                              Maximum="10"
+                             BackgroundColor="White"
                              Increment="1"/>
 
                     <Label Grid.Row="1" Grid.Column="0"
@@ -46,6 +60,7 @@
                              x:Name="stp_criancas"
                              Minimum="0"
                              Maximum="10"
+                             BackgroundColor="White"
                              Increment="1"/>
                 </Grid>
 
@@ -54,18 +69,26 @@
                 <Picker x:Name="pck_quarto"
                          TextColor="#800080"
                         Title="Selecione Sua Acomodação"
-                        ItemDisplayBinding="{Binding Descricao}"/>
+                        ItemDisplayBinding="{Binding Descricao}"
+                        BackgroundColor="White" />
 
                 <Frame Padding="10"
-                       Margin="10">
+                       Margin="10"
+                       BackgroundColor="White">
+
                     <VerticalStackLayout>
-                        <Label Text="Período da Estadia"/>
-                 
+                        <Label Text="Período da Estadia"
+                              FontAttributes="Bold"
+                               HorizontalOptions="Center"
+                              TextColor="#4B0082"/>
+
+
                         <HorizontalStackLayout>
                         <Label Text="Check-in:" />
                             <DatePicker x:Name="dtpck_checkin"
-                                        DateSelected="dtpck_checkin_DateSelected"
-                                        Format="dd/mm/yyyy"/>
+                                    DateSelected="dtpck_checkin_DateSelected"
+                                    Format="dd/mm/yyyy"/>
+
                         </HorizontalStackLayout>
 
 
@@ -74,6 +97,7 @@
                             <DatePicker x:Name="dtpck_checkout"
                                         Format="dd/mm/yyyy"/>
                         </HorizontalStackLayout>
+                        
 
                     </VerticalStackLayout>
                 </Frame>
@@ -84,11 +108,30 @@
 
         <Button Text="Avançar"
                 BackgroundColor="#800080"
-               Clicked="Button_Clicked"/>
+                FontAttributes="Bold"
+                CornerRadius="10"
+                Margin="0,10,0,0"
+                Clicked="Button_Clicked"/>
 
-        <Button Text="Sobre"
-        BackgroundColor="#4B0082"
-        Clicked="btnSobre_Clicked"/>
+            <Button Text="Galeria"
+            BackgroundColor="#4B0082"
+            FontAttributes="Bold"
+            CornerRadius="10"
+            Margin="0,10,0,0"
+            Clicked="Button_Clicked_1"/>
 
-    </VerticalStackLayout>
-</ContentPage>             
+            <Button Text="Sobre"
+                BackgroundColor="#800080"
+                FontAttributes="Bold"
+                CornerRadius="10"
+                Margin="0,10,0,0"
+                Clicked="btnSobre_Clicked"/>
+
+
+
+        </VerticalStackLayout>
+
+
+    </ScrollView>
+
+</ContentPage>

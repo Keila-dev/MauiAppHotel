@@ -55,9 +55,12 @@
                    HorizontalTextAlignment="Start"/>
 
             <Button Text="Voltar"
-             HorizontalOptions="Center"
-             BackgroundColor="#800080"
-             Clicked="Button_Clicked"/>
+                 HorizontalOptions="Center"
+                 BackgroundColor="#800080"
+                 FontAttributes="Bold"
+                 CornerRadius="10"
+                 Margin="0,10,0,0"
+                 Clicked="Button_Clicked"/>
 
         </VerticalStackLayout>
     </ScrollView>

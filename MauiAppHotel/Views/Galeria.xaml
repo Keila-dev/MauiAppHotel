@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.Galeria"
+             Title="Galeria"
+             BackgroundColor="{StaticResource PrimaryDark}">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="10" Spacing="20">
+
+            <!-- Título da Tela -->
+            <Label Text="Galeria de Suítes"
+                   FontSize="50"
+                   FontFamily="Kalam"
+                   TextColor="#800080"
+                   HorizontalOptions="Center"
+                   Margin="0,10,0,20"/>
+
+            <FlexLayout Wrap="Wrap" JustifyContent="Center" AlignItems="Center">
+              
+                <!-- Suíte Super Luxo -->
+                <VerticalStackLayout Margin="10" HorizontalOptions="Center">
+                    <Label Text="Super Luxo"
+                           FontAttributes="Italic"
+                           FontSize="24"
+                           HorizontalOptions="Center"
+                           TextColor="#800080"
+                           Margin="0,0,0,5"/>
+
+                    <Frame HasShadow="True"
+                           BorderColor="Black"
+                           CornerRadius="24"
+                           Padding="0">
+                        <Image Source="super_luxo.jpg"
+                               WidthRequest="200"
+                               HeightRequest="200"
+                               Aspect="AspectFill"/>
+                    </Frame>
+                </VerticalStackLayout>
+
+
+                <!-- Suíte Luxo 2 -->
+                <VerticalStackLayout Margin="10" HorizontalOptions="Center">
+                    <Label Text="Luxo"
+                           FontAttributes="Italic"
+                           FontSize="24"
+                           HorizontalOptions="Center"
+                           TextColor="#800080"
+                           Margin="0,0,0,5"/>
+
+                    <Frame HasShadow="True"
+                           BorderColor="Black"
+                           CornerRadius="15"
+                           Padding="0">
+                        <Image Source="luxo.jpg"
+                               WidthRequest="200"
+                               HeightRequest="200"
+                               Aspect="AspectFill"/>
+                    </Frame>
+                </VerticalStackLayout>
+
+                <!-- Suíte Single -->
+                <VerticalStackLayout Margin="10" HorizontalOptions="Center">
+                    <Label Text="Single"
+                           FontAttributes="Italic"
+                           FontSize="24"
+                           HorizontalOptions="Center"
+                           TextColor="#800080"
+                           Margin="0,0,0,5"/>
+
+                    <Frame HasShadow="True"
+                           BorderColor="Black"
+                           CornerRadius="15"
+                           Padding="0">
+                        <Image Source="single.jpg"
+                               WidthRequest="200"
+                               HeightRequest="200"
+                               Aspect="AspectFill"/>
+                    </Frame>
+                </VerticalStackLayout>
+
+                <!-- Suíte Crise -->
+                <VerticalStackLayout Margin="10" HorizontalOptions="Center">
+                    <Label Text="Crise"
+                           FontAttributes="Italic"
+                           FontSize="24"
+                           HorizontalOptions="Center"
+                           TextColor="#800080"
+                           Margin="0,0,0,5"/>
+
+                    <Frame HasShadow="True"
+                           BorderColor="Black"
+                           CornerRadius="15"
+                           Padding="0">
+
+                        <Image Source="crise.jpg"
+                               WidthRequest="200"
+                               HeightRequest="200"
+                               Aspect="AspectFill"/>
+                    </Frame>
+                </VerticalStackLayout>
+
+            </FlexLayout>
+
+            <Button Text="Voltar"
+                    HorizontalOptions="Center"
+                    BackgroundColor="#800080"
+                    FontAttributes="Bold"
+                    CornerRadius="10"
+                    Margin="0,10,0,0"
+                    Clicked="Button_Clicked"/>
+
+        </VerticalStackLayout>
+
+    </ScrollView>
+
+</ContentPage>
