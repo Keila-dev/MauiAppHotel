@@ -10,7 +10,8 @@
     <ScrollView>
 
         <VerticalStackLayout VerticalOptions="CenterAndExpand"
-                         Padding="10">
+                         Padding="10"
+                             Spacing="10">
 
         <Image Source="hotel.png"
        HeightRequest="250"
@@ -64,26 +65,33 @@
                              Increment="1"/>
                 </Grid>
 
-                <Label Text="Escolha Sua Suíte:"/>
+                    <Frame Padding="10" Margin="10">
+                        <VerticalStackLayout>
 
-                <Picker x:Name="pck_quarto"
-                         TextColor="#800080"
-                        Title="Selecione Sua Acomodação"
-                        ItemDisplayBinding="{Binding Descricao}"
-                        BackgroundColor="White" />
+                            <Label Text="Escolha sua Suíte"
+                                   FontAttributes="Bold"
+                                   TextTransform="Uppercase"
+                                   TextColor="#800080"/>
 
-                <Frame Padding="10"
+                            <Picker x:Name="pck_quarto"
+                                Title="Selecione sua Acomodação:"
+                                ItemDisplayBinding="{Binding Descricao}"/>
+                        </VerticalStackLayout>
+                    </Frame>
+
+                    <Frame Padding="10"
                        Margin="10"
                        BackgroundColor="White">
 
-                    <VerticalStackLayout>
+                    <VerticalStackLayout Spacing="10">
                         <Label Text="Período da Estadia"
                               FontAttributes="Bold"
+                               TextTransform="Uppercase"
                                HorizontalOptions="Center"
-                              TextColor="#4B0082"/>
+                              TextColor="#800080"/>
 
 
-                        <HorizontalStackLayout>
+                        <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
                         <Label Text="Check-in:" />
                             <DatePicker x:Name="dtpck_checkin"
                                     DateSelected="dtpck_checkin_DateSelected"
@@ -92,7 +100,7 @@
                         </HorizontalStackLayout>
 
 
-                        <HorizontalStackLayout>
+                        <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
                             <Label Text="Check-out:" />
                             <DatePicker x:Name="dtpck_checkout"
                                         Format="dd/mm/yyyy"/>
